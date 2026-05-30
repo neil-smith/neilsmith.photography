@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="photo-single">
+  <div class="photo-single-image">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="photo-single-img" />
+    {{ end }}
+  </div>
+  <div class="photo-single-info">
+    <div class="photo-single-tag">{{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+    <h1 class="photo-single-title">{{ .Title }}</h1>
+    <p class="photo-single-desc">{{ .Description }}</p>
+    <a href="/gallery" class="btn-ghost">← Back to Gallery</a>
+  </div>
+</div>
+{{ end }}

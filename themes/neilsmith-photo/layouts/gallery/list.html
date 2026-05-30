@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-tag">// GALLERY</div>
+    <h1 class="page-title">The <span class="accent">Work</span></h1>
+    <p class="page-subtitle">Nikon Z8 · iPhone 17 Pro Max · DJI Air 2 · GoPro</p>
+  </div>
+</div>
+
+<div class="gallery-page">
+  <div class="gallery-filters" role="navigation" aria-label="Filter gallery">
+    <button class="filter-btn active" data-filter="all">// ALL</button>
+    <button class="filter-btn" data-filter="companions">// COMPANIONS</button>
+    <button class="filter-btn" data-filter="wildlife">// WILDLIFE</button>
+    <button class="filter-btn" data-filter="landscapes">// LANDSCAPES</button>
+    <button class="filter-btn" data-filter="documentary">// DOCUMENTARY</button>
+  </div>
+
+  <div class="gallery-grid" id="gallery-grid">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="gallery-item" data-tags="{{ range .Params.tags }}{{ . }} {{ end }}">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="gallery-img" loading="lazy" />
+      {{ end }}
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">{{ .Title }}</div>
+        <div class="gallery-item-meta">{{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

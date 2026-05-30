@@ -1,0 +1,73 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-tag">// ABOUT</div>
+    <h1 class="page-title">The <span class="accent">Photographer</span></h1>
+    <p class="page-subtitle">Security engineer by profession. Photographer by compulsion.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="about-photo-grid">
+    <div class="about-photo-main">
+      <div class="about-block">
+        <div class="about-block-tag">[WHO]</div>
+        <p class="about-body">Neil Smith. Based in Lincoln, UK. Security architect and governance lead by profession — the full story is at <a href="https://neilsmith.work" class="accent-link">neilsmith.work</a>. Here, the subject is photography.</p>
+        <p class="about-body">Started on a Canon EOS 350D, then made the switch to Nikon — D7000, then D70, a brief experiment with the Nikon 1 J1 (mirrorless before mirrorless was ready), and eventually the Z8. 45 megapixels of full frame that rewards the patience to find the right frame. Left-handed throughout, which changes how you hold a camera, how you configure it, and which shots feel natural.</p>
+        <p class="about-body">The philosophy is simple: the frame is there before you look for it. The job is to slow down enough to see it. Most people walk past the shot that was there all along.</p>
+      </div>
+
+      <div class="about-block">
+        <div class="about-block-tag">[WHAT]</div>
+        <p class="about-body">Wildlife, landscape, street, travel — filed here as companions, documentary, landscapes and wildlife. Black and white where the light earns it. Colour where the colour is the point.</p>
+        <p class="about-body">Kayaking on the canals around Lincolnshire with a GoPro. Aerial with a DJI Air 2. Street with an iPhone 17 Pro Max when the Z8 would change the dynamic. The right tool for the right moment.</p>
+      </div>
+
+      <div class="about-block">
+        <div class="about-block-tag">[WHY]</div>
+        <p class="about-body">The same reason the security work is interesting — systems, patterns, the gap between how things are supposed to look and how they actually are. Photography is just a different kind of observation.</p>
+      </div>
+
+      <div class="about-cta">
+        <a href="/gallery" class="btn-primary">View the Gallery</a>
+        <a href="https://neilsmith.work" target="_blank" rel="noopener noreferrer" class="btn-ghost">neilsmith.work</a>
+      </div>
+    </div>
+
+    <aside class="about-photo-sidebar">
+      <div class="sidebar-card terminal">
+        <div class="terminal-bar">
+          <div class="t-dot t-red"></div>
+          <div class="t-dot t-yellow"></div>
+          <div class="t-dot t-green"></div>
+          <div class="terminal-title">photographer.sh</div>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">➜</span> <span class="t-cmd">cat profile.json</span></div>
+          <div class="t-line t-brace">{</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-key">"location"</span><span class="t-colon">:</span> <span class="t-val">"Lincoln, UK"</span>,</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-key">"body"</span><span class="t-colon">:</span> <span class="t-val">"Nikon Z8"</span>,</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-key">"handedness"</span><span class="t-colon">:</span> <span class="t-val">"left"</span>,</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-key">"genres"</span><span class="t-colon">:</span> [</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-indent"></span><span class="t-green-text">"companions"</span>,</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-indent"></span><span class="t-green-text">"documentary"</span>,</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-indent"></span><span class="t-green-text">"landscapes"</span>,</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-indent"></span><span class="t-green-text">"wildlife"</span></div>
+          <div class="t-line"><span class="t-indent"></span>],</div>
+          <div class="t-line"><span class="t-indent"></span><span class="t-key">"also"</span><span class="t-colon">:</span> <span class="t-val">"neilsmith.work"</span></div>
+          <div class="t-line t-brace">}</div>
+          <div class="t-line t-gap"><span class="t-prompt">➜</span> <span class="t-cursor"></span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-tag">[ELSEWHERE]</div>
+        <ul class="sidebar-links">
+          <li><a href="https://neilsmith.work" target="_blank" rel="noopener noreferrer">neilsmith.work</a></li>
+          <li><a href="https://www.instagram.com/groguthehousehippo/" target="_blank" rel="noopener noreferrer">@groguthehousehippo</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+{{ end }}

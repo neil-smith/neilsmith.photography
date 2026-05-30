@@ -1,0 +1,27 @@
+<section class="latest-section" aria-label="Latest work">
+  <div class="latest-inner">
+    <div class="section-header">
+      <span class="section-num">// LATEST</span>
+      <h2 class="section-title">Recent Work</h2>
+      <div class="section-line"></div>
+      <a href="/gallery" class="section-link">View all →</a>
+    </div>
+    <div class="latest-grid">
+      {{ range first 6 (where .Site.RegularPages "Section" "gallery") }}
+      <a href="{{ .Permalink }}" class="latest-card">
+        {{ with .Params.image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" class="latest-img" loading="lazy" />
+        {{ end }}
+        <div class="latest-card-overlay">
+          <div class="latest-card-title">{{ .Title }}</div>
+          <div class="latest-card-tags">
+            {{ range .Params.tags }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>

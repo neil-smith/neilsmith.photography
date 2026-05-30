@@ -1,0 +1,22 @@
+baseURL = "https://neilsmith.photography/"
+languageCode = "en-gb"
+title = "Neil Smith Photography"
+theme = "neilsmith-photo"
+enableRobotsTXT = true
+
+[params]
+  name = "Neil Smith"
+  description = "Photography by Neil Smith — Nikon Z8, landscape, wildlife, street and travel. Based in Lincoln, UK."
+  location = "Lincoln, UK"
+  instagram = "https://www.instagram.com/groguthehousehippo/"
+  linkedin = "https://linkedin.com/in/neil-s-32433661"
+  work = "https://neilsmith.work"
+  camera = "Nikon Z8"
+  tagline = "Seeing the frame others walk past"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"

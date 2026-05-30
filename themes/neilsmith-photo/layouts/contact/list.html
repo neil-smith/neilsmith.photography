@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-tag">// CONTACT</div>
+    <h1 class="page-title">Get In <span class="accent">Touch</span></h1>
+    <p class="page-subtitle">Commissions, collaborations, or just to say hello</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="contact-grid">
+    <div class="contact-terminal terminal">
+      <div class="terminal-bar">
+        <div class="t-dot t-red"></div>
+        <div class="t-dot t-yellow"></div>
+        <div class="t-dot t-green"></div>
+        <div class="terminal-title">contact.sh</div>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">➜</span> <span class="t-cmd">./contact.sh --list</span></div>
+        <div class="t-line t-gap"></div>
+        <div class="t-line"><span class="t-key">email</span>    <a href="mailto:{{ .Site.Params.email }}" class="t-val contact-link">{{ .Site.Params.email }}</a></div>
+        <div class="t-line"><span class="t-key">instagram</span><a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener noreferrer" class="t-val contact-link">@groguthehousehippo</a></div>
+        <div class="t-line"><span class="t-key">work</span>     <a href="{{ .Site.Params.work }}" target="_blank" rel="noopener noreferrer" class="t-val contact-link">neilsmith.work</a></div>
+        <div class="t-line t-gap"><span class="t-prompt">➜</span> <span class="t-cursor"></span></div>
+      </div>
+    </div>
+    <div class="contact-info">
+      <p class="contact-desc">Available for commissions, collaborations and conversations about kit. Based in Lincoln, UK.</p>
+      <div class="contact-availability">
+        <div class="status-dot"></div>
+        <span>Open to commissions</span>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
