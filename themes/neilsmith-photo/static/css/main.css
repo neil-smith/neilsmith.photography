@@ -1224,3 +1224,8 @@ body {
 }
 
 [data-theme="light"] .kit-history-camera { color: #1a2a1a; }
+
+/* --- Holding page --- */
+.holding-terminal {
+  max-width: 600px;
+}
